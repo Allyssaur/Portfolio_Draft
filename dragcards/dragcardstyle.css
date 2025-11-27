@@ -1,0 +1,188 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 1000px;
+  background-color: #c3c3c3;
+}
+.paper {
+  background-image: url("https://i0.wp.com/textures.world/wp-content/uploads/2018/10/2-Millimeter-Paper-Background-copy.jpg?ssl=1");
+  background-size: 500px;
+  background-position: center center;
+  padding: 20px 100px;
+  //min-width: 800px;
+  transform: rotateZ(-5deg);
+  box-shadow: 1px 15px 20px 0px rgba(0,0,0,0.5);
+  position: absolute;
+}
+.paper.heart {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  padding: 0;
+  border-radius: 50%;
+}
+.paper.image {
+  padding: 10px;
+}
+.paper.image p {
+  font-size: 30px;
+}
+.paper.red {
+/*   filter: hue-rotate(90deg); */
+}
+.paper:nth-of-type(3n) {
+  background-position: left top;
+}
+.paper:nth-of-type(3n) {
+/*   filter: hue-rotate(200deg); */
+}
+p {
+  font-family: 'Zeyada';
+  font-size: 50px;
+  color: rgb(0,0,100);
+  opacity: 0.75;
+  user-select: none;
+  // filter: drop-shadow(2px 1.5px 1px rgba(0,0,105,0.9));
+}
+
+body{
+  margin:0;
+  padding:0;
+  // background:#8ECBF8;
+}
+.card{
+  position:absolute;
+  width:350px;
+  height:450px;
+  left:40%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  // background:url( https://raw.githubusercontent.com/claudz1/CodepenImages/master/pattern.png) repeat;
+  background-image: url(https://raw.githubusercontent.com/claudz1/CodepenImages/master/pattern.png), linear-gradient(#CE8D1E,#CE8D1E);
+transform-style:preserve-3d;
+  perspective:2000px;
+   /*first box-shadow value is for thr car interio and second for the outer box-shadow i.e we can have multiple box-shadows when separated by a comma*/
+  box-shadow:inset 200px 0 50px rgba(0,0,0,.5),0 20px 100px rgba(0,0,0,.5);
+  transition:1s;
+}
+.card:hover{
+  transform:translate(-50%,-50%) rotate(-10deg);
+  perspective:2000px;
+  /*on hover remove the box shadow*/
+  box-shadow:inset 20px 0 50px rgba(0,0,0,.5),0 20px 100px rgba(0,0,0,.5);
+}
+//positions the top level
+/*for the width*/
+.card:before{
+  content:'';
+  position:absolute;
+  top:-5px;
+  left:0;
+  width:100%;
+  height:5px;
+   background: #fcc05f;
+  transform-origin:left;
+  transform:skewX(-45deg);
+}
+//positions the right side
+/*forthe height*/
+.card:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:-5px;
+  width:5px;
+  height:100%;
+  background:  #fcc05f;
+  transform-origin:left;
+  transform:skewy(-45deg);
+  
+}
+.card .imgBox{
+  width:100%;
+  height:100%;
+  position:relative;
+  transform-origin:left;
+  background: url(https://raw.githubusercontent.com/claudz1/CodepenImages/master/front-bg.png);
+  transition:1s;
+}
+.card:hover .imgBox{
+  transform:rotatey(-135deg);
+}
+.card .details{
+  position:absolute;
+  top:0;
+  left:0;
+  box-sizing:border-box;
+  padding:20px;
+  z-index:-1;
+  transition: all .2s ease-in-out;
+}
+.card .details:hover{
+ transform: scale(1.1);
+   text-shadow:10px 40px 50px #f47373;
+  filter:blur(0.6px);
+}
+h2{
+  font-family: 'Leckerli One', cursive;
+  font-size:3em;
+  text-align:center;
+  color:#E43834;
+  transition: all .2s ease-in-out;
+}
+h2:hover{
+  //transform: scale(1.6);
+   text-shadow:10px 40px 50px #f47373;
+  filter:blur(0.6px);
+}
+p{
+  font-family: 'Mirza', cursive;
+  font-size:2em;
+
+}
+img{
+  position:absolute;
+  height:140px;
+  bottom:0%;
+  left:62%;
+  animation:santa 10s linear infinite;
+  z-index:-2;
+  /*Set our animation play state to paused initially */
+  animation-play-state: paused;
+}
+img:hover{
+  /* Toggle our animation play state to running when we are hovering over our sticker */
+  animation-play-state: running;
+}
+@keyframes santa{
+  0%{
+    left: 0%;
+  }
+  50%{
+    left: 70%;
+  }
+  100%{
+    left: 25%;
+  }
+}
+//snowfall effect
+// .snow1{
+//   background-size:cover;
+//   background: url(https://raw.githubusercontent.com/claudz1/CodepenImages/master/flake.png);
+//   background-repeat:repeat;
+//   width:100%;
+//   top:0;
+//   animation:animateone 10s infinite linear;
+// }
+@keyframes animateone{
+  0%{
+    background-position:0px 0px;
+  }
+   100%{
+    background-position:200px 298px;
+  }
+  
+}
+

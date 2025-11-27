@@ -56,8 +56,9 @@ body{
   position:absolute;
   width:350px;
   height:450px;
-  left:40%;
+  left:35%;
   top:50%;
+  z-index: 3;
   transform:translate(-50%,-50%);
   // background:url( https://raw.githubusercontent.com/claudz1/CodepenImages/master/pattern.png) repeat;
   background-image: url(https://raw.githubusercontent.com/claudz1/CodepenImages/master/pattern.png), linear-gradient(#CE8D1E,#CE8D1E);
@@ -70,6 +71,7 @@ transform-style:preserve-3d;
 .card:hover{
   transform:translate(-50%,-50%) rotate(-10deg);
   perspective:2000px;
+  z-index:-2;
   /*on hover remove the box shadow*/
   box-shadow:inset 20px 0 50px rgba(0,0,0,.5),0 20px 100px rgba(0,0,0,.5);
 }
@@ -105,7 +107,8 @@ transform-style:preserve-3d;
   height:100%;
   position:relative;
   transform-origin:left;
-  background: url(https://raw.githubusercontent.com/claudz1/CodepenImages/master/front-bg.png);
+  background: url();
+  background-size: 350px 450px;
   transition:1s;
 }
 .card:hover .imgBox{
@@ -125,29 +128,16 @@ transform-style:preserve-3d;
    text-shadow:10px 40px 50px #f47373;
   filter:blur(0.6px);
 }
-h2{
-  font-family: 'Leckerli One', cursive;
-  font-size:3em;
-  text-align:center;
-  color:#E43834;
-  transition: all .2s ease-in-out;
-}
 h2:hover{
   //transform: scale(1.6);
    text-shadow:10px 40px 50px #f47373;
   filter:blur(0.6px);
-}
-p{
-  font-family: 'Mirza', cursive;
-  font-size:2em;
-
 }
 img{
   position:absolute;
   height:140px;
   bottom:0%;
   left:62%;
-  animation:santa 10s linear infinite;
   z-index:-2;
   /*Set our animation play state to paused initially */
   animation-play-state: paused;
@@ -167,15 +157,6 @@ img:hover{
     left: 25%;
   }
 }
-//snowfall effect
-// .snow1{
-//   background-size:cover;
-//   background: url(https://raw.githubusercontent.com/claudz1/CodepenImages/master/flake.png);
-//   background-repeat:repeat;
-//   width:100%;
-//   top:0;
-//   animation:animateone 10s infinite linear;
-// }
 @keyframes animateone{
   0%{
     background-position:0px 0px;

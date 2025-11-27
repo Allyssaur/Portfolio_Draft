@@ -4,64 +4,48 @@ body {
   align-items: center;
   justify-content: center;
   background-size: 1000px;
-  background-color: #c3c3c3;
+  background-color: #a2a2a2;
 }
 .paper {
-  background-image: url("https://i0.wp.com/textures.world/wp-content/uploads/2018/10/2-Millimeter-Paper-Background-copy.jpg?ssl=1");
-  background-size: 500px;
-  background-position: center center;
-  padding: 20px 100px;
   //min-width: 800px;
-  transform: rotateZ(-5deg);
-  box-shadow: 1px 15px 20px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.5);
   position: absolute;
 }
-.paper.heart {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  padding: 0;
-  border-radius: 50%;
+.paper.invite {
+  width: 320px;
+  height: 450px;
+  transform: rotateZ(5deg);
+  left: 50%;
+  background:url(https://github.com/Allyssaur/Portfolio_Draft/blob/main/Images/PORTFOLIOINVITESINFO-01-01-01.png?raw=true);
+  background-size: auto 450px;
 }
-.paper.image {
-  padding: 10px;
+.paper.rsvp {
+  width: 180px;
+  height: 250px;
+  transform: rotateZ(-1deg);
+  top:50%;
+  left: 40%;
+  background:url(https://github.com/Allyssaur/Portfolio_Draft/blob/main/Images/PORTFOLIO_RSVPFRONT-01.png?raw=true);
+  background-size: auto 250px;
 }
-.paper.image p {
-  font-size: 30px;
-}
-.paper.red {
-/*   filter: hue-rotate(90deg); */
-}
-.paper:nth-of-type(3n) {
-  background-position: left top;
-}
-.paper:nth-of-type(3n) {
-/*   filter: hue-rotate(200deg); */
-}
-p {
-  font-family: 'Zeyada';
-  font-size: 50px;
-  color: rgb(0,0,100);
-  opacity: 0.75;
-  user-select: none;
-  // filter: drop-shadow(2px 1.5px 1px rgba(0,0,105,0.9));
-}
-
-body{
-  margin:0;
-  padding:0;
-  // background:#8ECBF8;
+.paper.details {
+  width: 320px;
+  height: 450px;
+  top: 10px;
+  transform: rotateZ(-5deg);
+  background:url(https://github.com/Allyssaur/Portfolio_Draft/blob/main/Images/PORTFOLIODETAILS-01.png?raw=true);
+  background-size: auto 450px;
 }
 .card{
   position:absolute;
-  width:350px;
+  width:315px;
   height:450px;
-  left:35%;
+  left:40%;
   top:50%;
-  z-index: 3;
+  z-index: 1;
   transform:translate(-50%,-50%);
   // background:url( https://raw.githubusercontent.com/claudz1/CodepenImages/master/pattern.png) repeat;
-  background-image: url(https://raw.githubusercontent.com/claudz1/CodepenImages/master/pattern.png), linear-gradient(#CE8D1E,#CE8D1E);
+  background-image: linear-gradient(#471d47, #471d47);
 transform-style:preserve-3d;
   perspective:2000px;
    /*first box-shadow value is for thr car interio and second for the outer box-shadow i.e we can have multiple box-shadows when separated by a comma*/
@@ -71,7 +55,7 @@ transform-style:preserve-3d;
 .card:hover{
   transform:translate(-50%,-50%) rotate(-10deg);
   perspective:2000px;
-  z-index:-2;
+  z-index:0;
   /*on hover remove the box shadow*/
   box-shadow:inset 20px 0 50px rgba(0,0,0,.5),0 20px 100px rgba(0,0,0,.5);
 }
@@ -84,7 +68,7 @@ transform-style:preserve-3d;
   left:0;
   width:100%;
   height:5px;
-   background: #fcc05f;
+   background: #471d47;
   transform-origin:left;
   transform:skewX(-45deg);
 }
@@ -97,7 +81,6 @@ transform-style:preserve-3d;
   right:-5px;
   width:5px;
   height:100%;
-  background:  #fcc05f;
   transform-origin:left;
   transform:skewy(-45deg);
   
@@ -107,55 +90,14 @@ transform-style:preserve-3d;
   height:100%;
   position:relative;
   transform-origin:left;
-  background: url();
-  background-size: 350px 450px;
-  transition:1s;
+  background: url(https://github.com/Allyssaur/Portfolio_Draft/blob/main/PORTFOLIOINVITESCOVERFRONT-01.png?raw=true);
+  background-size: auto 450px;
+  transition:1.5s;
 }
 .card:hover .imgBox{
   transform:rotatey(-135deg);
-}
-.card .details{
-  position:absolute;
-  top:0;
-  left:0;
-  box-sizing:border-box;
-  padding:20px;
-  z-index:-1;
-  transition: all .2s ease-in-out;
-}
-.card .details:hover{
- transform: scale(1.1);
-   text-shadow:10px 40px 50px #f47373;
-  filter:blur(0.6px);
-}
-h2:hover{
-  //transform: scale(1.6);
-   text-shadow:10px 40px 50px #f47373;
-  filter:blur(0.6px);
-}
-img{
-  position:absolute;
-  height:140px;
-  bottom:0%;
-  left:62%;
-  z-index:-2;
-  /*Set our animation play state to paused initially */
-  animation-play-state: paused;
-}
-img:hover{
-  /* Toggle our animation play state to running when we are hovering over our sticker */
-  animation-play-state: running;
-}
-@keyframes santa{
-  0%{
-    left: 0%;
-  }
-  50%{
-    left: 70%;
-  }
-  100%{
-    left: 25%;
-  }
+  /* remove 'bg' if you don't like the way the cover disappears when hovering, but will appear backwards when open */
+  /*background:#471d47;*/
 }
 @keyframes animateone{
   0%{
@@ -166,4 +108,23 @@ img:hover{
   }
   
 }
-
+.paper.envinside {
+  width:430px;
+  height:445px;
+  left: 5%;
+  top: 5%;
+  background-image: url(https://github.com/Allyssaur/Portfolio_Draft/blob/main/Images/envelope.png?raw=true);
+  background-size: auto 445px;
+  transform: rotateZ(10deg);
+  z-index: -2;
+}
+.paper.envoutside {
+   width:430px;
+  height:290px;
+  left: 1%;
+  top: 45%;
+  background-image: url(https://github.com/Allyssaur/Portfolio_Draft/blob/main/Images/envelope.png?raw=true);
+  background-size: 430px auto;
+  transform: rotateZ(-10deg);
+  z-index: -1;
+}

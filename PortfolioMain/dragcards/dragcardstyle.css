@@ -16,7 +16,7 @@ body {
   height: 450px;
   transform: rotateZ(5deg);
   left: 50%;
-  background:url(https://github.com/Allyssaur/Portfolio_Draft/blob/main/Images/PORTFOLIOINVITESINFO-01-01-01.png?raw=true);
+  background:url(\Portfolio_Draft\PortfolioMain\Images\PORTFOLIOINVITESINFO-01-01-01.png);
   background-size: auto 450px;
 }
 .paper.rsvp {
@@ -25,7 +25,7 @@ body {
   transform: rotateZ(-1deg);
   top:50%;
   left: 40%;
-  background:url(https://github.com/Allyssaur/Portfolio_Draft/blob/main/Images/PORTFOLIO_RSVPFRONT-01.png?raw=true);
+  background:url(\Portfolio_Draft\PortfolioMain\Images\PORTFOLIO_RSVPFRONT-01.png);
   background-size: auto 250px;
 }
 .paper.details {
@@ -33,7 +33,7 @@ body {
   height: 450px;
   top: 10px;
   transform: rotateZ(-5deg);
-  background:url(https://github.com/Allyssaur/Portfolio_Draft/blob/main/Images/PORTFOLIODETAILS-01.png?raw=true);
+  background:url(\Portfolio_Draft\PortfolioMain\Images\PORTFOLIODETAILS-01.png);
   background-size: auto 450px;
 }
 .card{
@@ -44,7 +44,7 @@ body {
   top:50%;
   z-index: 1;
   transform:translate(-50%,-50%);
-  // background:url( https://raw.githubusercontent.com/claudz1/CodepenImages/master/pattern.png) repeat;
+  // background:url(\Portfolio_Draft\PortfolioMain\Images\PORTFOLIOINVITESCOVERFRONT-01.png) repeat;
   background-image: linear-gradient(#471d47, #471d47);
 transform-style:preserve-3d;
   perspective:2000px;
@@ -90,7 +90,7 @@ transform-style:preserve-3d;
   height:100%;
   position:relative;
   transform-origin:left;
-  background: url(https://github.com/Allyssaur/Portfolio_Draft/blob/main/PORTFOLIOINVITESCOVERFRONT-01.png?raw=true);
+  background: url(Portfolio_Draft\PortfolioMain\Images\envelope.png);
   background-size: auto 450px;
   transition:1.5s;
 }
@@ -113,7 +113,7 @@ transform-style:preserve-3d;
   height:445px;
   left: 5%;
   top: 5%;
-  background-image: url(https://github.com/Allyssaur/Portfolio_Draft/blob/main/Images/envelope.png?raw=true);
+  background-image: url(Portfolio_Draft\PortfolioMain\Images\envelope.png);
   background-size: auto 445px;
   transform: rotateZ(10deg);
   z-index: -2;
@@ -123,7 +123,7 @@ transform-style:preserve-3d;
   height:290px;
   left: 1%;
   top: 45%;
-  background-image: url(https://github.com/Allyssaur/Portfolio_Draft/blob/main/Images/envelope.png?raw=true);
+  background-image: url(Portfolio_Draft\PortfolioMain\Images\envelope.png);
   background-size: 430px auto;
   transform: rotateZ(-10deg);
   z-index: -1;

@@ -18,7 +18,15 @@ html {
   background: #1c1d22;
   font-family: sans-serif;
 }
-
+.name{
+  font-size: 1em;
+  color: #c3c3c3;
+}
+.hello{
+  margin: 10%;
+  padding: 5%;
+  background-color: #c3c3c3;
+}
 .menu {
   display: flex;
   justify-content: center;

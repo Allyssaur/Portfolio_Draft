@@ -15,36 +15,42 @@ body {
   width: 320px;
   height: 450px;
   transform: rotateZ(5deg);
-  left: 50%;
+  left: 50vw;
+  top: 25vh;
   background:url(PORTFOLIOINVITESINFO-01-01-01.png);
   background-size: auto 450px;
+  transition: 1s;
 }
 .paper.rsvp {
   width: 180px;
   height: 250px;
   transform: rotateZ(5deg);
-  top:50%;
+  left: 45vw;
+  top:50vh;
   left: 42%;
   background:url(PORTFOLIO_RSVPFRONT-01.png);
   background-size: auto 250px;
+  transition: 1s;
 }
 .paper.details {
   width: 320px;
   height: 450px;
-  top: 10px;
+  left:40vw;
+  top: 10vh;
   transform: rotateZ(-5deg);
   background:url(PORTFOLIODETAILS-01.png);
   background-size: auto 450px;
+  transition: 1s;
 }
 .card{
   position:absolute;
   width:315px;
   height:450px;
-  left:40%;
-  top:50%;
+  left:40vw;
+  top:50vh;
   z-index: 1;
   transform:translate(-50%,-50%);
-  // background:url(PORTFOLIOINVITESCOVERFRONT-01.png) repeat;
+  background:url(PORTFOLIOINVITESCOVERFRONT-01.png) repeat;
   background-image: linear-gradient(#471d47, #471d47);
 transform-style:preserve-3d;
   perspective:2000px;
@@ -78,7 +84,7 @@ transform-style:preserve-3d;
   content:'';
   position:absolute;
   top:0;
-  right:-5px;
+  right:-5vp;
   width:5px;
   height:100%;
   transform-origin:left;
@@ -109,24 +115,26 @@ transform-style:preserve-3d;
   
 }
 .paper.envinside {
-  width:350px;
-  height:445px;
-  left: 5%;
-  top: 5%;
+  width:250px;
+  height:300px;
+  left: 10vw;
+  top: 5vh;
   background-image: url(EnvOpen.png);
-  background-size: auto 350px;
+  background-size: auto 300px;
   transform: rotateZ(10deg);
   z-index: -2;
   box-shadow: none;
+  transition: 1s
 }
 .paper.envoutside {
-   width:350px;
-  height:475px;
-  left: 1%;
-  top: 27%;
+   width:300px;
+  height:375px;
+  left: 5vw;
+  top: 27vh;
   background-image: url(EnvOuter.png);
-  background-size: 350px auto;
+  background-size: 300px auto;
   transform: rotateZ(-10deg);
   z-index: -1;
   box-shadow:none;
+  transition: 1s;
 }

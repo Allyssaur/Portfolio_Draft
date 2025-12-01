@@ -22,9 +22,9 @@ body {
 .paper.rsvp {
   width: 180px;
   height: 250px;
-  transform: rotateZ(-1deg);
+  transform: rotateZ(5deg);
   top:50%;
-  left: 40%;
+  left: 42%;
   background:url(PORTFOLIO_RSVPFRONT-01.png);
   background-size: auto 250px;
 }
@@ -109,22 +109,24 @@ transform-style:preserve-3d;
   
 }
 .paper.envinside {
-  width:430px;
+  width:350px;
   height:445px;
   left: 5%;
   top: 5%;
-  background-image: url(envelope.png);
-  background-size: auto 445px;
+  background-image: url(EnvOpen.png);
+  background-size: auto 350px;
   transform: rotateZ(10deg);
   z-index: -2;
+  box-shadow: none;
 }
 .paper.envoutside {
-   width:430px;
-  height:290px;
+   width:350px;
+  height:475px;
   left: 1%;
-  top: 45%;
-  background-image: url(envelope.png);
-  background-size: 430px auto;
+  top: 27%;
+  background-image: url(EnvOuter.png);
+  background-size: 350px auto;
   transform: rotateZ(-10deg);
   z-index: -1;
+  box-shadow:none;
 }
